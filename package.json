@@ -6,7 +6,7 @@
       "start":"node app.js",
       "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "author": "",
+    "author": "Ruba Aburub",
     "license": "ISC",
     "dependencies": {
       "axios": "^0.18.0",

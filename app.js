@@ -4,7 +4,7 @@ const axios = require('axios')
 var url = require('url');
 
 app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Origin", "*"); //allows access to port when requesting the API
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
   });
@@ -66,4 +66,4 @@ app.get('/deals', (req, res) => {
         });
 })
 
-app.listen(process.env.PORT, () => console.log('Example app listening on port 4000!'))
+app.listen(process.env.PORT, () => console.log('Example app listening on port !')) //port is dynamic
