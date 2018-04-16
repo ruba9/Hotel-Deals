@@ -66,4 +66,5 @@ app.get('/deals', (req, res) => {
         });
 })
 
-app.listen(process.env.PORT, () => console.log('Example app listening on port !')) //port is dynamic
+app.listen(process.env.PORT || 4000, () => console.log(` app listening on port ${process.env.PORT || 4000}!`))
+ //port is dynamic or localhost 4k
